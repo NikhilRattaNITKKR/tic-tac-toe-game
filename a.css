@@ -1,0 +1,117 @@
+body{
+  display: inline-flex;
+  justify-content:center;
+  width: 100%;
+height: 100vh;
+  margin: 0;
+  flex-wrap: wrap;
+  background-color:rebeccapurple;
+}
+h1{
+  font-size: 100px;
+    margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align:center;
+  color: white;
+  height:0;
+animation: hanime .4s .5s linear ;
+animation-fill-mode:backwards;
+}
+section{
+  display: inline-flex;
+  color: white;
+  width: 40%;
+  height: 50%;
+  justify-content:center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-radius: 30px;
+
+}
+.diva{
+background: aqua;
+width: 28%;
+margin: 10px;
+border-radius: 10px;
+text-align:center;
+padding-top: 10px;
+font-size: 70px;
+height: 25%;
+animation: start 1s 1s;
+animation-fill-mode: both;
+}
+.diva:hover{
+  background-color:whitesmoke;
+}
+@keyframes  hanime{
+  0%{
+    transform: translate(-1000px);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(-100px);
+    opacity: .8;
+  }
+  90%{
+    opacity: 1;
+  transform: rotate(3deg);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+@keyframes  rotate{
+  30%{
+    transform: rotate(180deg);
+  }
+  70%{
+    transform: rotate(270deg);
+    opacity: .5;
+  }
+  100%{
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes start {
+
+0%{
+  opacity: 0;
+}
+  30%{
+    transform: rotate(-90deg);
+    opacity: .2;
+  }
+  70%{
+    transform: rotate(-180deg);
+     opacity: .6;
+  }
+  100%{
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+.won{
+  transition: transform 1s 1.5s;
+  transform: translateY(320px);
+}
+@keyframes back{
+  25%{
+    background-color: darkblue;
+  }
+  50%{
+    background-color: darkred;
+  }
+  75%{
+    background-color: greenyellow;
+  }
+  100%{
+    background-color: coral;
+  }
+}
+.back{
+  animation: back 1.5s 1s;
+  animation-iteration-count: infinite;
+}
