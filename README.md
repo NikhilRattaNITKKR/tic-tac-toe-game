@@ -34,11 +34,11 @@ The `a.js` file contains the following key functions:
 3.  Player X starts the game. Click on an empty cell to place your 'X'.
 4.  Player O takes the next turn. Click on an empty cell to place your 'O'.
 5.  Players continue taking turns until one player gets three of their marks in a row (horizontally, vertically, or diagonally) or until all cells are filled (resulting in a draw).
-6.  The game will announce the winner and display animations.
+6.  Click the 'Reset Game' button at any time to clear the board and start a new game.
+7.  The game will announce the winner and display animations.
 
 ## Future Enhancements (Optional)
 
 -   Implement a draw condition.
--   Add a reset button to start a new game.
 -   Improve the visual design and animations.
 -   Allow players to choose their marks (X or O).

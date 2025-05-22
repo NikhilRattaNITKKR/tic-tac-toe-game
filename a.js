@@ -83,3 +83,30 @@ var a2=0;
 
 return -1;
 }
+
+function resetGame() {
+  // Iterate through all game cells and clear their innerHTML and animations
+  for (var i = 0; i < y.length; i++) {
+    y[i].innerHTML = '';
+    y[i].style.animation = ''; // Reset animation
+  }
+
+  // Reset the internal representation of the game board
+  b = ['a','a','a','a','a','a','a','a','a'];
+
+  // Reset the turn counter
+  a = 0;
+
+  // Reset the heading
+  z.innerHTML = "Tic-Tac-Toe";
+  z.classList.remove("won");
+
+  // Remove the background class from the body
+  v.classList.remove("back");
+}
+
+// Add event listener to the reset button
+var resetButton = document.getElementById("resetBtn");
+if (resetButton) {
+  resetButton.addEventListener("click", resetGame);
+}
